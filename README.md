@@ -1,16 +1,37 @@
-# stefanini_app
+<p align="center"><img src="https://raw.githubusercontent.com/RodrigoScott/stefanini-app/develop/assets/images/icon.png" height="130px"></p>
 
-Amazon Appstore for Stefanini Group
+# Intro
 
-## Getting Started
+The project consists of a mobile application (Android, iOS) that helps show rank apps.
 
-This project is a starting point for a Flutter application.
+## Starting with the project
+To start using this project is very simple, you just have to clone and install the dependencies with this commands:
 
-A few resources to get you started if this is your first Flutter project:
+#### Android
+```
+flutter pub get
+flutter run
+```
+#### iOS
+```
+flutter pub get
+pod install
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Prerequisites
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The present project was developed using Flutter 3.7.10 for which it is necessary to have a version of Dart 2.19.6, in addition to having installed Android Studio Flamingo | 2022.2.1 Patch 2 to be able to develop.
+
+## Software
+
+|    Software    | Original Version | Actual Version |
+|:--------------:|:----------------:| :---:|
+|    Flutter     |      3.7.10      | 3.7.10  |
+|      Dart      |   Dart 2.19.6    | Dart 2.19.6 |
+|    DevTools    |      2.20.1      | 2.20.1 |
+| Android Studio |  Flamingo 2022.2.1 Patch 2   | 2022.2.1 Patch 2 |
+|   CocoaPods    |      1.10.1      | 1.10.1 |
+
+## People who worked on the project
+* **Rodrigo Scott** - *Developer* - [Perfil](https://github.com/RodrigoScott)
