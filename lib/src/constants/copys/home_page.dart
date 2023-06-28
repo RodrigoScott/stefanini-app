@@ -1,3 +1,4 @@
 class HomePage {
   final String search = 'Search';
+  final String noApp = 'No hay aplicaciones disponibles';
 }
