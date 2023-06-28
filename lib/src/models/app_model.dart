@@ -5,12 +5,12 @@ class AppModel {
   final String developer;
   final String category;
   final int rank;
-  final int cost;
+  final double cost;
   final String description;
   final String avatar;
   final String image;
   final bool installed;
-  final List<User> users;
+  final List<UserModel> users;
 
   AppModel({
     required this.name,
@@ -26,38 +26,29 @@ class AppModel {
   });
 
   factory AppModel.fromJson(Map<String, dynamic> json) => AppModel(
-    name: json["name"],
-    developer: json["developer"],
-    category: json["category"],
-    rank: json["rank"],
-    cost: json["cost"],
-    description: json["description"],
-    avatar: json["avatar"],
-    image: json["image"],
-    installed: json["installed"],
-    users: json["users"].isNotEmpty ? json["users"].map((d) => UserModel.fromJson(d)).toList() : []
-  );
+      name: json["name"],
+      developer: json["developer"],
+      category: json["category"],
+      rank: json["rank"],
+      cost: json["cost"],
+      description: json["description"],
+      avatar: json["avatar"],
+      image: json["image"],
+      installed: json["installed"],
+      users: json["users"].isNotEmpty
+          ? (json["users"] as List).map((an) => UserModel.fromJson(an)).toList()
+          : []);
 
   Map<String, dynamic> toJson() => {
-    "name": name,
-    "developer": developer,
-    "category": category,
-    "rank": rank,
-    "cost": cost,
-    "description": description,
-    "avatar": avatar,
-    "image": image,
-    "installed": installed,
-    "users": List<dynamic>.from(users.map((x) => x.toJson())),
-  };
-}
-
-class User {
-  User();
-
-  factory User.fromJson(Map<String, dynamic> json) => User(
-  );
-
-  Map<String, dynamic> toJson() => {
-  };
+        "name": name,
+        "developer": developer,
+        "category": category,
+        "rank": rank,
+        "cost": cost,
+        "description": description,
+        "avatar": avatar,
+        "image": image,
+        "installed": installed,
+        "users": List<dynamic>.from(users.map((x) => x.toJson())),
+      };
 }
