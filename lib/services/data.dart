@@ -7,23 +7,23 @@ const dummyData = r'''
     "rank": 1,
     "cost": 0.99,
     "description": "This is the description for App 1.",
-    "avatar": "avatar1.png",
-    "image": "image1.png",
+    "avatar": "1.webp",
+    "image": "1.webp",
     "installed": true,
     "users": [{
     "user": "User 1",
     "comments": "App 1 is a game-changer in the productivity space. Its intuitive interface and powerful features have greatly improved my workflow.",
-    "avatar": "avatar1.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 2",
     "comments": "I've been using App 2 for learning languages, and it's been an incredible tool. The interactive lessons and pronunciation exercises are top-notch.",
-    "avatar": "avatar2.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 3",
     "comments": "App 3 revolutionized my fitness journey. The workout plans and progress tracking keep me motivated to achieve my fitness goals.",
-    "avatar": "avatar3.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -33,19 +33,19 @@ const dummyData = r'''
     "rank": 2,
     "cost": 1.99,
     "description": "This is the description for App 2.",
-    "avatar": "avatar2.png",
-    "image": "image2.png",
+    "avatar": "2.webp",
+    "image": "2.webp",
     "installed": false,
     "users": [
     {
     "user": "User 4",
     "comments": "I can't imagine my life without App 4. Its smart home integration and automation features have made my home smarter and more efficient.",
-    "avatar": "avatar4.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 5",
     "comments": "App 5 is a lifesaver for managing my finances. Its budgeting tools and expense tracking capabilities have helped me gain control of my money.",
-    "avatar": "avatar5.png"
+    "avatar": "user.webp"
   },
     ]
   },
@@ -56,19 +56,19 @@ const dummyData = r'''
     "rank": 3,
     "cost": 0.0,
     "description": "This is the description for App 3.",
-    "avatar": "avatar3.png",
-    "image": "image3.png",
+    "avatar": "3.webp",
+    "image": "3.webp",
     "installed": true,
     "users": [
     {
     "user": "User 6",
     "comments": "I love using App 6 for meal planning. It has a vast collection of recipes, meal suggestions, and shopping lists that make cooking a breeze.",
-    "avatar": "avatar6.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 7",
     "comments": "App 7 is a fantastic social networking app. It keeps me connected with my friends and family, and the privacy settings are top-notch.",
-    "avatar": "avatar7.png"
+    "avatar": "user.webp"
   },
     ]
   },
@@ -79,18 +79,18 @@ const dummyData = r'''
     "rank": 4,
     "cost": 2.99,
     "description": "This is the description for App 4.",
-    "avatar": "avatar4.png",
-    "image": "image4.png",
+    "avatar": "4.webp",
+    "image": "2.webp",
     "installed": true,
     "users": [{
     "user": "User 8",
     "comments": "I've been using App 8 for meditation and mindfulness, and it has made a significant difference in my mental well-being. Highly recommended.",
-    "avatar": "avatar8.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 9",
     "comments": "App 9 is my go-to weather app. Its accurate forecasts and beautiful UI make checking the weather a delightful experience.",
-    "avatar": "avatar9.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -100,18 +100,18 @@ const dummyData = r'''
     "rank": 5,
     "cost": 0.0,
     "description": "This is the description for App 5.",
-    "avatar": "avatar5.png",
-    "image": "image5.png",
+    "avatar": "5.webp",
+    "image": "2.webp",
     "installed": false,
     "users": [{
     "user": "User 10",
     "comments": "I've tried several task management apps, but App 10 is by far the best. Its simplicity and powerful features help me stay organized and focused.",
-    "avatar": "avatar10.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 11",
     "comments": "App 11 is a game-changer for my photography. The editing tools and filters give my photos a professional touch with minimal effort.",
-    "avatar": "avatar11.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -121,18 +121,18 @@ const dummyData = r'''
     "rank": 3,
     "cost": 4.99,
     "description": "This is the description for App 6.",
-    "avatar": "avatar6.png",
-    "image": "image6.png",
+    "avatar": "6.webp",
+    "image": "1.webp",
     "installed": true,
     "users": [{
     "user": "User 12",
     "comments": "I've been using App 12 for tracking my daily habits, and it has helped me build positive routines and break bad habits. It's a game-changer.",
-    "avatar": "avatar12.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 13",
     "comments": "App 13 is a fantastic travel companion. It provides offline maps, translation tools, and recommendations, making exploring new places a breeze.",
-    "avatar": "avatar13.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -142,23 +142,23 @@ const dummyData = r'''
     "rank": 4,
     "cost": 1.99,
     "description": "This is the description for App 7.",
-    "avatar": "avatar7.png",
-    "image": "image7.png",
+    "avatar": "7.webp",
+    "image": "3.webp",
     "installed": false,
     "users": [{
     "user": "User 5",
     "comments": "App 5 is a lifesaver for managing my finances. Its budgeting tools and expense tracking capabilities have helped me gain control of my money.",
-    "avatar": "avatar5.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 6",
     "comments": "I love using App 6 for meal planning. It has a vast collection of recipes, meal suggestions, and shopping lists that make cooking a breeze.",
-    "avatar": "avatar6.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 7",
     "comments": "App 7 is a fantastic social networking app. It keeps me connected with my friends and family, and the privacy settings are top-notch.",
-    "avatar": "avatar7.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -168,18 +168,18 @@ const dummyData = r'''
     "rank": 5,
     "cost": 0.0,
     "description": "This is the description for App 8.",
-    "avatar": "avatar8.png",
-    "image": "image8.png",
+    "avatar": "8.webp",
+    "image": "3.webp",
     "installed": true,
     "users": [{
     "user": "User 14",
     "comments": "I've been using App 14 for learning to play the guitar, and it's been an incredible learning tool. The interactive lessons and chord library are amazing.",
-    "avatar": "avatar14.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 15",
     "comments": "App 15 is an excellent news aggregator. It provides personalized news recommendations, and its clean interface makes reading news a pleasant experience.",
-    "avatar": "avatar15.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -189,18 +189,18 @@ const dummyData = r'''
     "rank": 3,
     "cost": 3.99,
     "description": "This is the description for App 9.",
-    "avatar": "avatar9.png",
-    "image": "image9.png",
+    "avatar": "9.webp",
+    "image": "2.webp",
     "installed": true,
     "users": [{
     "user": "User 16",
     "comments": "I love using App 16 for tracking my running and cycling activities. Its GPS tracking and detailed statistics help me analyze and improve my performance.",
-    "avatar": "avatar16.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 17",
     "comments": "App 17 is my go-to app for recipe ideas. It has a vast collection of delicious recipes, and the step-by-step instructions are easy to follow.",
-    "avatar": "avatar17.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -210,18 +210,18 @@ const dummyData = r'''
     "rank": 1,
     "cost": 0.0,
     "description": "This is the description for App 10.",
-    "avatar": "avatar10.png",
-    "image": "image10.png",
+    "avatar": "10.webp",
+    "image": "1.webp",
     "installed": false,
     "users": [{
     "user": "User 18",
     "comments": "I've been using App 18 for learning to code, and it's been a fantastic learning resource. The interactive coding exercises and tutorials are exceptional.",
-    "avatar": "avatar18.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 19",
     "comments": "App 19 is a game-changer for managing my personal finances. Its budgeting tools and expense tracking features have helped me save money and reach my financial goals.",
-    "avatar": "avatar19.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -231,28 +231,28 @@ const dummyData = r'''
     "rank": 1,
     "cost": 5.99,
     "description": "This is the description for App 11.",
-    "avatar": "avatar11.png",
-    "image": "image11.png",
+    "avatar": "11.webp",
+    "image": "2.webp",
     "installed": true,
     "users": [{
     "user": "User 17",
     "comments": "App 17 is my go-to app for recipe ideas. It has a vast collection of delicious recipes, and the step-by-step instructions are easy to follow.",
-    "avatar": "avatar17.png"
+    "avatar": "user.webp.webp"
   },
   {
     "user": "User 18",
     "comments": "I've been using App 18 for learning to code, and it's been a fantastic learning resource. The interactive coding exercises and tutorials are exceptional.",
-    "avatar": "avatar18.png"
+    "avatar": "user.webp.webp"
   },
   {
     "user": "User 19",
     "comments": "App 19 is a game-changer for managing my personal finances. Its budgeting tools and expense tracking features have helped me save money and reach my financial goals.",
-    "avatar": "avatar19.png"
+    "avatar": "user.webp.webp"
   },
   {
     "user": "User 20",
     "comments": "I can't recommend App 20 enough for music lovers. Its vast library of songs, personalized playlists, and seamless streaming make it a must-have app.",
-    "avatar": "avatar20.png"
+    "avatar": "user.webp.webp"
   }]
   },
   {
@@ -262,23 +262,23 @@ const dummyData = r'''
     "rank": 2,
     "cost": 0.99,
     "description": "This is the description for App 12.",
-    "avatar": "avatar12.png",
-    "image": "image12.png",
+    "avatar": "12.webp",
+    "image": "3.webp",
     "installed": true,
     "users": [{
     "user": "User 3",
     "comments": "App 3 revolutionized my fitness journey. The workout plans and progress tracking keep me motivated to achieve my fitness goals.",
-    "avatar": "avatar3.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 4",
     "comments": "I can't imagine my life without App 4. Its smart home integration and automation features have made my home smarter and more efficient.",
-    "avatar": "avatar4.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 5",
     "comments": "App 5 is a lifesaver for managing my finances. Its budgeting tools and expense tracking capabilities have helped me gain control of my money.",
-    "avatar": "avatar5.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -288,23 +288,23 @@ const dummyData = r'''
     "rank": 3,
     "cost": 1.99,
     "description": "This is the description for App 13.",
-    "avatar": "avatar13.png",
-    "image": "image13.png",
+    "avatar": "13.webp",
+    "image": "1.webp",
     "installed": false,
     "users": [{
     "user": "User 7",
     "comments": "App 7 is a fantastic social networking app. It keeps me connected with my friends and family, and the privacy settings are top-notch.",
-    "avatar": "avatar7.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 8",
     "comments": "I've been using App 8 for meditation and mindfulness, and it has made a significant difference in my mental well-being. Highly recommended.",
-    "avatar": "avatar8.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 9",
     "comments": "App 9 is my go-to weather app. Its accurate forecasts and beautiful UI make checking the weather a delightful experience.",
-    "avatar": "avatar9.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -314,18 +314,18 @@ const dummyData = r'''
     "rank": 2,
     "cost": 0.0,
     "description": "This is the description for App 14.",
-    "avatar": "avatar14.png",
-    "image": "image14.png",
+    "avatar": "14.webp",
+    "image": "2.webp",
     "installed": true,
     "users": [{
     "user": "User 11",
     "comments": "App 11 is a game-changer for my photography. The editing tools and filters give my photos a professional touch with minimal effort.",
-    "avatar": "avatar11.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 12",
     "comments": "I've been using App 12 for tracking my daily habits, and it has helped me build positive routines and break bad habits. It's a game-changer.",
-    "avatar": "avatar12.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -335,18 +335,18 @@ const dummyData = r'''
     "rank": 5,
     "cost": 2.99,
     "description": "This is the description for App 15.",
-    "avatar": "avatar15.png",
-    "image": "image15.png",
+    "avatar": "15.webp",
+    "image": "1.webp",
     "installed": true,
     "users": [{
     "user": "User 4",
     "comments": "I can't imagine my life without App 4. Its smart home integration and automation features have made my home smarter and more efficient.",
-    "avatar": "avatar4.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 5",
     "comments": "App 5 is a lifesaver for managing my finances. Its budgeting tools and expense tracking capabilities have helped me gain control of my money.",
-    "avatar": "avatar5.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -356,18 +356,18 @@ const dummyData = r'''
     "rank": 3,
     "cost": 0.0,
     "description": "This is the description for App 16.",
-    "avatar": "avatar16.png",
-    "image": "image16.png",
+    "avatar": "16.webp",
+    "image": "3.webp",
     "installed": false,
     "users": [{
     "user": "User 6",
     "comments": "I love using App 6 for meal planning. It has a vast collection of recipes, meal suggestions, and shopping lists that make cooking a breeze.",
-    "avatar": "avatar6.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 7",
     "comments": "App 7 is a fantastic social networking app. It keeps me connected with my friends and family, and the privacy settings are top-notch.",
-    "avatar": "avatar7.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -377,23 +377,23 @@ const dummyData = r'''
     "rank": 4,
     "cost": 6.99,
     "description": "This is the description for App 17.",
-    "avatar": "avatar17.png",
-    "image": "image17.png",
+    "avatar": "17.webp",
+    "image": "2.webp",
     "installed": true,
     "users": [{
     "user": "User 13",
     "comments": "App 13 is a fantastic travel companion. It provides offline maps, translation tools, and recommendations, making exploring new places a breeze.",
-    "avatar": "avatar13.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 14",
     "comments": "I've been using App 14 for learning to play the guitar, and it's been an incredible learning tool. The interactive lessons and chord library are amazing.",
-    "avatar": "avatar14.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 15",
     "comments": "App 15 is an excellent news aggregator. It provides personalized news recommendations, and its clean interface makes reading news a pleasant experience.",
-    "avatar": "avatar15.png"
+    "avatar": "user.webp"
   },]
   },
   {
@@ -403,28 +403,28 @@ const dummyData = r'''
     "rank": 5,
     "cost": 0.99,
     "description": "This is the description for App 18.",
-    "avatar": "avatar18.png",
-    "image": "image18.png",
+    "avatar": "18.webp",
+    "image": "1.webp",
     "installed": true,
     "users": [{
     "user": "User 16",
     "comments": "I love using App 16 for tracking my running and cycling activities. Its GPS tracking and detailed statistics help me analyze and improve my performance.",
-    "avatar": "avatar16.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 17",
     "comments": "App 17 is my go-to app for recipe ideas. It has a vast collection of delicious recipes, and the step-by-step instructions are easy to follow.",
-    "avatar": "avatar17.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 18",
     "comments": "I've been using App 18 for learning to code, and it's been a fantastic learning resource. The interactive coding exercises and tutorials are exceptional.",
-    "avatar": "avatar18.png"
+    "avatar": "user.webp"
   },
   {
     "user": "User 19",
     "comments": "App 19 is a game-changer for managing my personal finances. Its budgeting tools and expense tracking features have helped me save money and reach my financial goals.",
-    "avatar": "avatar19.png"
+    "avatar": "user.webp"
   },]
   }
 ]
