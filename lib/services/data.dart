@@ -24,7 +24,7 @@ const dummyData = r'''
     "user": "User 3",
     "comments": "App 3 revolutionized my fitness journey. The workout plans and progress tracking keep me motivated to achieve my fitness goals.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 2",
@@ -46,7 +46,7 @@ const dummyData = r'''
     "user": "User 5",
     "comments": "App 5 is a lifesaver for managing my finances. Its budgeting tools and expense tracking capabilities have helped me gain control of my money.",
     "avatar": "user.webp"
-  },
+  }
     ]
   },
   {
@@ -69,7 +69,7 @@ const dummyData = r'''
     "user": "User 7",
     "comments": "App 7 is a fantastic social networking app. It keeps me connected with my friends and family, and the privacy settings are top-notch.",
     "avatar": "user.webp"
-  },
+  }
     ]
   },
   {
@@ -91,7 +91,7 @@ const dummyData = r'''
     "user": "User 9",
     "comments": "App 9 is my go-to weather app. Its accurate forecasts and beautiful UI make checking the weather a delightful experience.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 5",
@@ -112,7 +112,7 @@ const dummyData = r'''
     "user": "User 11",
     "comments": "App 11 is a game-changer for my photography. The editing tools and filters give my photos a professional touch with minimal effort.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 6",
@@ -133,7 +133,7 @@ const dummyData = r'''
     "user": "User 13",
     "comments": "App 13 is a fantastic travel companion. It provides offline maps, translation tools, and recommendations, making exploring new places a breeze.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 7",
@@ -159,7 +159,7 @@ const dummyData = r'''
     "user": "User 7",
     "comments": "App 7 is a fantastic social networking app. It keeps me connected with my friends and family, and the privacy settings are top-notch.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 8",
@@ -180,7 +180,7 @@ const dummyData = r'''
     "user": "User 15",
     "comments": "App 15 is an excellent news aggregator. It provides personalized news recommendations, and its clean interface makes reading news a pleasant experience.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 9",
@@ -201,7 +201,7 @@ const dummyData = r'''
     "user": "User 17",
     "comments": "App 17 is my go-to app for recipe ideas. It has a vast collection of delicious recipes, and the step-by-step instructions are easy to follow.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 10",
@@ -222,7 +222,7 @@ const dummyData = r'''
     "user": "User 19",
     "comments": "App 19 is a game-changer for managing my personal finances. Its budgeting tools and expense tracking features have helped me save money and reach my financial goals.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 11",
@@ -279,7 +279,7 @@ const dummyData = r'''
     "user": "User 5",
     "comments": "App 5 is a lifesaver for managing my finances. Its budgeting tools and expense tracking capabilities have helped me gain control of my money.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 13",
@@ -305,7 +305,7 @@ const dummyData = r'''
     "user": "User 9",
     "comments": "App 9 is my go-to weather app. Its accurate forecasts and beautiful UI make checking the weather a delightful experience.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 14",
@@ -326,7 +326,7 @@ const dummyData = r'''
     "user": "User 12",
     "comments": "I've been using App 12 for tracking my daily habits, and it has helped me build positive routines and break bad habits. It's a game-changer.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 15",
@@ -347,7 +347,7 @@ const dummyData = r'''
     "user": "User 5",
     "comments": "App 5 is a lifesaver for managing my finances. Its budgeting tools and expense tracking capabilities have helped me gain control of my money.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 16",
@@ -368,7 +368,7 @@ const dummyData = r'''
     "user": "User 7",
     "comments": "App 7 is a fantastic social networking app. It keeps me connected with my friends and family, and the privacy settings are top-notch.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 17",
@@ -394,7 +394,7 @@ const dummyData = r'''
     "user": "User 15",
     "comments": "App 15 is an excellent news aggregator. It provides personalized news recommendations, and its clean interface makes reading news a pleasant experience.",
     "avatar": "user.webp"
-  },]
+  }]
   },
   {
     "name": "App 18",
@@ -425,7 +425,7 @@ const dummyData = r'''
     "user": "User 19",
     "comments": "App 19 is a game-changer for managing my personal finances. Its budgeting tools and expense tracking features have helped me save money and reach my financial goals.",
     "avatar": "user.webp"
-  },]
+  }]
   }
 ]
 ''';
