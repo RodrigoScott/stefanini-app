@@ -4,13 +4,13 @@ class BlockButtonWidget extends StatelessWidget {
   const BlockButtonWidget({
     Key? key,
     required this.color,
-    required this.text,
+    this.text,
     required this.onPressed,
     this.icon,
   }) : super(key: key);
 
   final Color color;
-  final String text;
+  final String? text;
   final VoidCallback onPressed;
   final IconData? icon;
 
@@ -27,7 +27,7 @@ class BlockButtonWidget extends StatelessWidget {
     ) : ElevatedButton(
       onPressed: onPressed,
       child: Text(
-        text,
+        text!,
         style: Theme.of(context).textTheme.bodyLarge!.copyWith(
           color: Colors.white,
         ),
