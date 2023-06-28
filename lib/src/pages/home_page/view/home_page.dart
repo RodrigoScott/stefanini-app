@@ -52,6 +52,7 @@ class _HomePageState extends State<HomePage> {
     searchWord = '';
     searchController.clear();
     category = null;
+    isSearch = false;
     FocusScope.of(context).requestFocus(new FocusNode());
     setState(() {});
   }
