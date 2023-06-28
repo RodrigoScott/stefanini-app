@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'src/pages/home_page/view/home_Page.dart';
+import 'src/pages/home_page/view/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,9 +26,7 @@ class MyApp extends StatelessWidget {
         SystemUiOverlayStyle.dark.copyWith(statusBarColor: Colors.transparent));
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-      title: 'Stefanini App',
-      home: HomePage()
-    );
+        title: 'Stefanini App',
+        home: HomePage());
   }
-
 }
