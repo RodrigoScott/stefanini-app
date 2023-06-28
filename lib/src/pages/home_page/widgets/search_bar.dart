@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import '../../../constants/copys.dart';
 
 class SearchBar extends StatelessWidget {
-  const SearchBar({Key? key, required this.searchInput}) : super(key: key);
-
+  const SearchBar(
+      {Key? key, required this.searchInput, required this.searchController})
+      : super(key: key);
+  final TextEditingController searchController;
   final ValueChanged<String> searchInput;
 
   @override
@@ -13,6 +15,7 @@ class SearchBar extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10), color: Colors.white),
       child: TextFormField(
+        controller: searchController,
         textCapitalization: TextCapitalization.characters,
         onChanged: (value) {
           searchInput(value);
