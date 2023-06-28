@@ -237,22 +237,22 @@ const dummyData = r'''
     "users": [{
     "user": "User 17",
     "comments": "App 17 is my go-to app for recipe ideas. It has a vast collection of delicious recipes, and the step-by-step instructions are easy to follow.",
-    "avatar": "user.webp.webp"
+    "avatar": "user.webp"
   },
   {
     "user": "User 18",
     "comments": "I've been using App 18 for learning to code, and it's been a fantastic learning resource. The interactive coding exercises and tutorials are exceptional.",
-    "avatar": "user.webp.webp"
+    "avatar": "user.webp"
   },
   {
     "user": "User 19",
     "comments": "App 19 is a game-changer for managing my personal finances. Its budgeting tools and expense tracking features have helped me save money and reach my financial goals.",
-    "avatar": "user.webp.webp"
+    "avatar": "user.webp"
   },
   {
     "user": "User 20",
     "comments": "I can't recommend App 20 enough for music lovers. Its vast library of songs, personalized playlists, and seamless streaming make it a must-have app.",
-    "avatar": "user.webp.webp"
+    "avatar": "user.webp"
   }]
   },
   {
