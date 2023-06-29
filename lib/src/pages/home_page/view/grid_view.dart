@@ -15,14 +15,12 @@ class GridWidget extends StatelessWidget {
           padding: EdgeInsets.all(10),
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 200,
-              childAspectRatio: 1.4 / 2,
+              childAspectRatio: .65,
               crossAxisSpacing: 20,
               mainAxisSpacing: 20),
           itemCount: appObject.length,
           itemBuilder: (BuildContext ctx, index) {
-            return AppCard(
-                size: size,
-                appObject: appObject[index]);
+            return AppCard(size: size, appObject: appObject[index]);
           }),
     );
   }
