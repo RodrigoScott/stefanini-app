@@ -33,5 +33,11 @@ The present project was developed using Flutter 3.7.10 for which it is necessary
 | Android Studio |  Flamingo 2022.2.1 Patch 2   | 2022.2.1 Patch 2 |
 |   CocoaPods    |      1.10.1      | 1.10.1 |
 
+## APK
+
+https://i.diawi.com/P5EaBF
+
+Available until July 5, 2023
+
 ## People who worked on the project
 * **Rodrigo Scott** - *Developer* - [Perfil](https://github.com/RodrigoScott)
