@@ -12,9 +12,7 @@ class DetailCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery
-        .of(context)
-        .size;
+    Size size = MediaQuery.of(context).size;
     return SimpleDialog(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
@@ -25,7 +23,7 @@ class DetailCard extends StatelessWidget {
             width: size.width * .7,
             height: size.height * .8,
             child:
-            Column(mainAxisAlignment: MainAxisAlignment.start, children: [
+                Column(mainAxisAlignment: MainAxisAlignment.start, children: [
               buildScreenShot(size),
               Divider(height: 20),
               buildAppAvatar(size),
@@ -36,7 +34,7 @@ class DetailCard extends StatelessWidget {
               Divider(
                 height: 20,
               ),
-              buildUserCommentsList(),
+              buildUserCommentsList(size),
               SizedBox(
                 height: 10,
               ),
@@ -83,15 +81,14 @@ class DetailCard extends StatelessWidget {
           width: 10,
         ),
         BlockButtonWidget(
-            color:
-            appObject.installed ? Colors.black38 : Colors.green,
+            color: appObject.installed ? Colors.black38 : Colors.green,
             text: 'Instalar',
             onPressed: appObject.installed ? () {} : () {})
       ],
     );
   }
 
-  buildUserCommentsList() {
+  buildUserCommentsList(Size size) {
     return Expanded(
       child: Scrollbar(
         thickness: 8,
@@ -111,9 +108,8 @@ class DetailCard extends StatelessWidget {
                   children: [
                     CircleAvatar(
                         backgroundImage: AssetImage(
-                          Assets.generalAssets +
-                              appObject.users[index].avatar,
-                        )),
+                      Assets.generalAssets + appObject.users[index].avatar,
+                    )),
                     SizedBox(
                       width: 10,
                     ),
@@ -121,19 +117,18 @@ class DetailCard extends StatelessWidget {
                       child: SizedBox(
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment:
-                          CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               appObject.users[index].user,
                               style: TextStyle(
-                                  fontSize: 16,
+                                  fontSize: size.width * .04,
                                   fontWeight: FontWeight.w500),
                             ),
                             Text(
                               appObject.users[index].comments,
                               style: TextStyle(
-                                  fontSize: 16,
+                                  fontSize: size.width * .04,
                                   fontWeight: FontWeight.w500),
                             ),
                           ],
@@ -178,7 +173,7 @@ class DetailCard extends StatelessWidget {
               Text(
                 appObject.name,
                 style: TextStyle(
-                    fontSize: 24, fontWeight: FontWeight.w700),
+                    fontSize: size.width * .055, fontWeight: FontWeight.w700),
               ),
               SizedBox(
                 height: 5,
@@ -186,7 +181,7 @@ class DetailCard extends StatelessWidget {
               Text(
                 appObject.developer,
                 style: TextStyle(
-                    fontSize: 12, fontWeight: FontWeight.w500),
+                    fontSize: size.width * .033, fontWeight: FontWeight.w500),
               ),
               SizedBox(
                 height: 5,
@@ -194,7 +189,7 @@ class DetailCard extends StatelessWidget {
               Text(
                 appObject.description,
                 style: TextStyle(
-                    fontSize: 16, fontWeight: FontWeight.w500),
+                    fontSize: size.width * .04, fontWeight: FontWeight.w500),
               ),
               SizedBox(
                 height: 5,
@@ -205,7 +200,7 @@ class DetailCard extends StatelessWidget {
                     ? Copys.homepage.free
                     : '\$${appObject.cost}',
                 style: TextStyle(
-                    fontSize: 24, fontWeight: FontWeight.w700),
+                    fontSize: size.width * .055, fontWeight: FontWeight.w700),
               )
             ]),
       ),
