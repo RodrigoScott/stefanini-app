@@ -21,7 +21,6 @@ class SearchBar extends StatelessWidget {
           searchInput(value);
         },
         decoration: InputDecoration(
-          isDense: true,
           enabledBorder: InputBorder.none,
           focusedBorder: InputBorder.none,
           hintText: Copys.homepage.search,
