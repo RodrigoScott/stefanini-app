@@ -69,11 +69,13 @@ class AppCard extends StatelessWidget {
             children: [
               Text(
                 appObject.name,
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+                style: TextStyle(
+                    fontSize: size.width * .055, fontWeight: FontWeight.w700),
               ),
               Text(
                 appObject.developer,
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                style: TextStyle(
+                    fontSize: size.width * .04, fontWeight: FontWeight.w500),
               ),
               SizedBox(
                 height: 5,
@@ -83,7 +85,8 @@ class AppCard extends StatelessWidget {
                 appObject.cost < 0.5
                     ? Copys.homepage.free
                     : '\$${appObject.cost}',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+                style: TextStyle(
+                    fontSize: size.width * .055, fontWeight: FontWeight.w700),
               )
             ]),
       ),
