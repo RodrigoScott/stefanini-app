@@ -19,7 +19,7 @@ class UserService {
     }
     if (searchWord.isNotEmpty) {
       appList!.forEach((element) {
-        if (element.name.contains(searchWord)) {
+        if (element.name.toLowerCase().contains(searchWord.toLowerCase())) {
           appListFiltered.add(element);
         }
       });
