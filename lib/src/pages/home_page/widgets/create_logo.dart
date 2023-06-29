@@ -43,12 +43,10 @@ class CreateLogo extends StatelessWidget {
               ),
               Row(
                 children: [
-                  SizedBox(
-                      width: size.width * .7,
-                      height: size.height * 0.05,
-                      child: SearchBar(
-                          searchInput: searchFilter,
-                          searchController: searchController)),
+                  SearchBar(
+                      size: size,
+                      searchInput: searchFilter,
+                      searchController: searchController),
                   SizedBox(
                     width: 10,
                   ),
