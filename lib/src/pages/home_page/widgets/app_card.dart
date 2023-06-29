@@ -25,64 +25,68 @@ class AppCard extends StatelessWidget {
             color: Colors.white,
             border: Border.all(color: AppColors.primary)),
         child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
-          Container(
-              height: size.width * .35,
-              width: size.width * .35,
-              child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Hero(
-                    tag: appObject.avatar,
-                    child: Image.asset(
-                      Assets.avatar + appObject.avatar,
-                      fit: BoxFit.cover,
-                    ),
-                  ))),
+          buildAvatar(),
           SizedBox(
             height: 10,
           ),
-          Expanded(
-            child: SizedBox(
-              width: size.width * .35,
-              child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Text(
-                      appObject.name,
-                      style:
-                      TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
-                    ),
-                    Text(
-                      appObject.developer,
-                      style:
-                      TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-                    ),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    RateBar(rate: appObject.rank),
-                    Text(
-                      appObject.cost < 0.5
-                          ? Copys.homepage.free
-                          : '\$${appObject.cost}',
-                      style:
-                      TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
-                    )
-                  ]),
-            ),
-          ),
+          cardBody(size: size, appObject: appObject),
         ]),
       ),
     );
+  }
+
+  Container buildAvatar() {
+    return Container(
+        height: size.width * .35,
+        width: size.width * .35,
+        child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Hero(
+              tag: appObject.avatar,
+              child: Image.asset(
+                Assets.avatar + appObject.avatar,
+                fit: BoxFit.cover,
+              ),
+            )));
   }
 
   void appModal(BuildContext context) {
     showDialog(
         barrierDismissible: false,
         context: context,
-        builder: (_) =>
-            DetailCard(
+        builder: (_) => DetailCard(
               appObject: appObject,
             ));
+  }
+
+  cardBody({required Size size, required AppModel appObject}) {
+    return Expanded(
+      child: SizedBox(
+        width: size.width * .35,
+        child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Text(
+                appObject.name,
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+              ),
+              Text(
+                appObject.developer,
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              RateBar(rate: appObject.rank),
+              Text(
+                appObject.cost < 0.5
+                    ? Copys.homepage.free
+                    : '\$${appObject.cost}',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+              )
+            ]),
+      ),
+    );
   }
 }
